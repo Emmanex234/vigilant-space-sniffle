@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symposium Website</title>
+    <style>
+        /* CSS styles */
+        /* Header styling */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: relative;
+        }
+  
+       .logo-container {
+            position: relative;
+            height: 10;
+        }
+        
+        .logo {
+            position: absolute;
+            left: 0%;
+            top: 3px;
+            transform: translateY(-50%);
+            white-space: nowrap;
+            overflow: hidden;
+            padding-top: -15%;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Main section styling */
+        main {
+            padding-top: 20px;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            color: #666;
+            font-size: 1.2em;
+        }
+  
+        #home {
+        background-color: #000;
+        color: #fff;
+        padding: 50px;
+        text-align: center;
+        }
+
+        #home .flyer h2 {
+        color: #00ff00;
+        }
+
+        /* Form styling */
+  
+        #r1{
+          display: none;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .footer-links ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        .social-icons {
+            font-size: 1.5em;
+        }
+
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .social-icons a:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <div class="logo-container">
+        <div class="logo" id="logo">3Rd SYMPOSIUM EDITION</div>
+      </div>
+      <br>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#r1" id="registration-link">Registration</a></li>
+                <li><a href="#venue">Venue</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#admin">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      
+    <section id="home">
+    <div class="flyer">
+        <h2> You are invited to our 3rd Edition Symposium</h2>
+        <p> Theme:The future of food: AI, Robotics and Vertical Farming</p>
+        <p>Date:22nd May, 2024</p>
+        <p>Time: 9PM </p>
+        <p>Venue: Hall of Excellence, FUTO</p>
+        <p>RSVP: [Insert RSVP Details]</p>
+    </div>
+</section>
+
+    <section id="about">
+        <h2>About the Symposium</h2>
+        <p>Learn about the purpose, goals, and significance of our symposium.</p>
+    </section>
+
+    <section id="agenda">
+        <h2>Agenda</h2>
+        <p>Explore the schedule of events and topics covered during the symposium.</p>
+    </section>
+
+    <section id="speakers">
+        <h2>Speakers</h2>
+        <p>Meet our distinguished speakers and learn about their expertise.</p>
+    </section>
+
+    <section id="venue">
+        <h2>Venue</h2>
+        <p>Find out where the symposium will take place and how to get there.</p>
+    </section>
+
+    <section id="faqs">
+        <h2>FAQs</h2>
+        <p>Got questions? Check out our frequently asked questions section.</p>
+    </section>
+
+    <section id="admin">
+        <h2>Admin Area</h2>
+        <p>Access the admin area to manage registrations and other administrative tasks.</p>
+    </section>
+
+    <section id="r1">
+        <h2>Registration</h2>
+        <form action="#" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="institution">Institution/Organization:</label>
+            <input type="text" id="institution" name="institution" required>
+
+            <label for="designation">Designation/Position:</label>
+            <input type="text" id="designation" name="designation" required>
+
+            <label for="comments">Comments (if any):</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <input type="submit" value="Register">
+        </form>
+    </section>
+</main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p>&copy; 2024 Symposium Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+    // JavaScript for animating the site name
+    const logo = document.getElementById('loo');
+    let position = 0;
+
+    function animateLogo() {
+        position += 1;
+        logo.style.left = position + 'px';
+
+        // Repeat the animation
+        if (position < window.innerWidth) {
+            requestAnimationFrame(animateLogo);
+        } else {
+            // Reset position when it reaches the end
+            position = 0;
+            logo.style.left = '0px';
+            requestAnimationFrame(animateLogo);
+        }
+    }
+
+    // Start the animation initially
+    animateLogo();
+
+    // Trigger the animation every 15 seconds
+    setInterval(animateLogo, 15000);
+  
+    // JavaScript to toggle visibility of the form section
+        document.getElementById('registration-link').addEventListener('click', function() {
+        var formSection = document.getElementById('r1');
+        if (formSection.style.display === 'none') {
+            formSection.style.display = 'block';
+        } else {
+            formSection.style.display = 'block';
+        }
+    };
+</script>
+</body>
+</html>
